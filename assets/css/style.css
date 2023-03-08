@@ -8,6 +8,7 @@
 /* utility */
 a{
     text-decoration: none;
+    color: currentColor;
 }
 
 img{
@@ -41,13 +42,175 @@ body{
     height: 100vh;
 }
 
-
-/* sidebar */
+/* sidebar */ 
 #sidebar{
-    width: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(70, 70, 70);
+    flex-direction: column;
     height: calc(100vh - 100px);
-    background-color: aqua;
+    overflow: hidden;
+    width: 50px;
+  }
+  
+.logo{
+    margin-bottom: 10px;
+    padding: 5px 10px;
 }
+  
+/* #sidebar .menu, > *,
+#sidebar .createplay > *,
+#sidebar .list > *,
+#sidebar .account{
+    margin-bottom: ;
+} */
 
-
+#sidebar .menu .icon{
+    margin-bottom: 10px;
+}
+  
+#sidebar .createplay{
+    margin-top: 15px;
+}
+  
+#sidebar .createplay strong{
+    color: white;
+}
+  
+#sidebar .createplay .flex{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+#sidebar .menu li .icon,
+#sidebar .createplay .icon{
+    margin-right: 5px;
+    width: 30px;
+}
+  
+#sidebar .menu li:hover .hide,
+#sidebar .account .flex:not(.profile):hover .hide {
+    color: white;
+}
+  
+#sidebar .menu .special .hide{
+    color: white;
+}
+  
+#sidebar .hide{
+    display: none;
+}
+  
+#sidebar .createplay .flex:hover,
+#sidebar .createplay .flex:hover .icon i{
+    color: white;
+}
+  
+#sidebar .createplay .icon i{
+    color: rgb(210, 210, 210);
+    font-size: 45px;
+}
+  
+#sidebar .createplay .hide{
+    padding-left: 15px;
+}
+  
+#sidebar .list li:hover{
+    color: white;
+}
+  
+#sidebar .list{
+    min-height: 80px;
+    overflow-y: auto;
+}
+  
+#sidebar .list ul > *{
+    margin-bottom: 20px;
+}
+  
+#sidebar .account{
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+  
+#sidebar .account .flex{
+    justify-content: center;
+}
+  
+#sidebar .account .icon.small{
+    margin-bottom: 20px;
+    width: 20px;
+}
+  
+#sidebar .account hr.hide{
+    border: 1px solid rgb(70, 70, 70);
+    border-top: none;
+    margin: 15px 0;
+    margin-right: 20px;
+}
+  
+#sidebar .account .profile{
+    color: rgb(70, 70, 70);
+}
+  
+#sidebar .account .profile img{
+    background-color: rgb(128, 128, 128);
+    border-radius: 50%;
+    height: 30px;
+    object-fit: contain;
+    width: 30px;
+}
+  
+#sidebar .account .profile .hide{
+    cursor: text;
+    font-weight: 700;
+    margin-left: 15px;
+}
+  
 /* media query */
+  
+@media screen and (min-width: 553px){
+  #sidebar{
+      align-items: flex-start;
+      padding-left: 20px;
+      width: 230px;
+    }
+  
+    #sidebar .logo{
+      padding: 20px 0;
+      width: 70%;
+    }
+  
+    #sidebar .menu li:before{
+      margin-right: 8px;
+    }
+  
+    #sidebar .view{
+      display: none;
+    }
+  
+    #sidebar .hide{
+      display: block;
+    }
+  
+    #sidebar .menu .relative{
+      position: relative;
+    }
+    
+    #sidebar .menu .special:before{
+      border-left: 3px solid rgb(173, 255, 47);
+      content: "";
+      height: 100%;
+      left: -20px;
+      position: absolute;
+    }
+  
+    #sidebar .account .flex{
+      justify-content: flex-start;
+    }
+  
+    #sidebar .account .icon.small{
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+}

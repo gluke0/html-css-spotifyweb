@@ -20,56 +20,64 @@
 <body>
     <div id="web-app">
         <!-- main -->
-        <main>
+        <main class="flex">
             <!-- sidebar -->
-            <nav id="sidebar">
+            <nav id="sidebar" class="flex ai-center">
                 <!--logo -->
-                <div>
-                    <img src="./assets/img/logo.svg" alt="Logo Spotify NoName">
-                    <img src="./assets/img/" alt="Logo Spotify">
+                <div class="logo">
+                    <img class="hide" src="./assets/img/logo.svg" alt="Logo Spotify NoName">
+                    <img class="view" src="./assets/img/logo-small.svg" alt="Logo Spotify">
                 </div>
 
                 <!-- menu -->
-                <ul>
-                    <li>
+                <ul class="menu">
+                    <li class="relative">
                         <a href="#">
-                            <div>
-                                <img src="./assets/img/home.svg" alt="Home">
-                                <div>Home</div>
+                            <div class="flex ai-center special">
+                                <div class="icon">
+                                    <img src="./assets/img/home.svg" alt="Home">
+                                </div>
+                                <div class="hide">Home</div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div>
-                                <img src="./assets/img/search.svg" alt="Search">
-                                <div>Cerca</div>
+                            <div class="flex ai-center">
+                                <div class="icon" >
+                                    <img src="./assets/img/search.svg" alt="Search">
+                                </div>
+                                <div class="hide">Cerca</div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <div>
-                                <img src="./assets/img/libreria.svg" alt="Library">
-                                <div>La tua libreria</div>
+                            <div class="flex ai-center">
+                                <div class="icon" >
+                                    <img src="./assets/img/libreria.svg" alt="Library">
+                                </div>
+                                <div class="hide">La tua libreria</div>
                             </div>
                         </a>
                     </li>
                 </ul>
 
                 <!-- crea playlist -->
-                <div>
-                    <div>PLAYLIST</div>
+                <div class="createplay hide">
+                    <div><strong>PLAYLIST</strong></div>
                     <a href="#">
-                        <div>
-                            <div><i class="fa-solid fa-square-plus"></i><div>
-                            <div>Crea Playlist</div>
+                        <div class="flex ai-center">
+                            <div class="icon">
+                                <i class="fa-solid fa-square-plus"></i>
+                            </div>
+                            <div class="hide">Crea Playlist</div>
                         </div>
                     </a>
                  </div>
 
                 <!-- playlist -->
-                <div>
+                <div class="hide list">
                     <ul>
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
@@ -82,18 +90,21 @@
                 </div>
 
                 <!-- account -->
-                <div>
+                <div class="account">
                     <a href="#">
-                        <div>
-                            <div><img src="./assets/img/download.svg" alt="Download App"></div>
-                            <div>Installa App</div>
+                        <div class="flex ai-center">
+                            <div class="icon small">
+                                <img src="./assets/img/download.svg" alt="Download App"></div>
+                            <div class="hide">Installa App</div>
                         </div>
                     </a>
-                    <hr>
+                    <hr class="hide">
                     <a href="#">
-                        <div>
-                            <div><img src="./assets/img/profile.svg" alt="Profile Photo"></div>
-                            <div>John Doe</div>
+                        <div class="flex ai-center profile">
+                            <div class="icon">
+                                <img src="./assets/img/profile.svg" alt="Profile Photo">
+                            </div>
+                            <div class="hide">John Doe</div>
                         </div>
                     </a>
                 </div>
@@ -101,7 +112,7 @@
 
 
             <!-- header -->
-            <div>
+            <div class="flex opacity">
                 <button><a href="#">EFFETTUA L'UPGRADE</a></button>
             </div>
 
