@@ -370,9 +370,16 @@ footer .f-left .album{
 
 /* center */
 
-
+#footer .f-center{
+    justify-content: center;
+    align-items: center;
+}
 
 /* right */
+
+#footer .f-right{
+    justify-content: flex-end;
+}
 
 /* media query */
   
