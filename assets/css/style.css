@@ -78,8 +78,14 @@ body{
 #sidebar .createplay .icon{
     margin-right: 5px;
     width: 30px;
+    opacity: 0.6;
 }
-  
+
+#sidebar .menu li .icon:hover,
+#sidebar .createplay .icon:hover{
+    opacity: 1;
+}
+
 #sidebar .menu li:hover .hide,
 #sidebar .account .flex:not(.profile):hover .hide {
     color: white;
@@ -159,6 +165,17 @@ body{
     font-weight: 700;
     margin-left: 15px;
 }
+
+#sidebar .auto{
+    margin-top: 7px;
+}
+
+
+/* header */
+
+
+
+
   
 /* media query */
   
