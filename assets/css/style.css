@@ -182,7 +182,6 @@ body{
 
 #big{
     background-color: rgb(20, 25, 34);
-    padding: 0 30px 0 20px;
     width: calc(100% - 50px);
 }
 
@@ -220,6 +219,7 @@ body{
 #focus{
     overflow-y: auto;
     height: calc(100vh - 90px);
+    padding: 0 20px 0 20px;
 }
 
 #big #menutwo{
@@ -311,9 +311,9 @@ body{
   border-radius: 50%;
 }
 
-
 /* media query */
   
+/* min 480px */
 @media screen and (min-width: 480px){
   #sidebar{
       align-items: flex-start;
@@ -357,5 +357,35 @@ body{
     #sidebar .account .icon.small{
       margin-bottom: 0;
       margin-right: 10px;
+    }
+
+    #big{
+        width: calc(100% - 230px);
+    }
+    
+    #big .opacity{
+        left: 230px;
+    }
+
+    #big button{
+        margin-right: 250px;
+    }
+}
+
+/* min 700px */
+@media screen and (min-width: 700px){
+    #big section ul li{
+        width: calc(100% / 4 - 12px);
+    }
+}
+
+/* min 950px */
+@media screen and (min-width: 950px){
+    #big section ul{
+        gap: 14px;
+    }
+
+    #big section ul li{
+        width: calc(100% / 6 - 12px);
     }
 }
