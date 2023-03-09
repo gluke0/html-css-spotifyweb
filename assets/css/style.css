@@ -214,6 +214,20 @@ body{
     transform: scale(1.2);
 }
 
+.special{
+    position: relative;
+}
+
+#focus #menutwo ul li.special:before{
+    border-bottom: 3px solid rgb(173, 255, 47);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    content: "";
+    width: 40%;
+}
+
 /* focus */
 
 #focus{
