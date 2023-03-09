@@ -311,6 +311,17 @@ body{
   border-radius: 50%;
 }
 
+/* footer */
+#footer{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    height: 90px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+
 /* media query */
   
 /* min 480px */
