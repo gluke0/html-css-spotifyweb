@@ -50,7 +50,6 @@ body{
     height: calc(100vh - 90px);
     overflow: hidden;
     width: 50px;
-    z-index: 2;
   }
   
 .logo{
@@ -194,6 +193,7 @@ body{
     align-items: center;
     background-color: rgb(8, 11, 18);
     height: 90px;
+    width: 100%;
     justify-content: flex-end;
     position: fixed;
     left: 50px;
@@ -208,7 +208,7 @@ body{
     border: 2px solid white;
     border-radius: 25px;
     color: white;
-    margin-right: 25px;
+    margin-right: 70px;
     padding: 15px 30px;
   }
 
@@ -223,7 +223,23 @@ body{
     margin: 100px 0 50px;
 }
 
-  
+#big #menutwo ul{
+    gap: 30px;
+    justify-content: center;
+}
+
+#big #menutwo ul li{
+    padding: 4px 0;
+}
+
+#big #menutwo ul li:hover a{
+    color: white;
+} 
+
+/* recently played */
+
+
+
 /* media query */
   
 @media screen and (min-width: 480px){
