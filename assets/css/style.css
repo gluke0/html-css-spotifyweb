@@ -330,11 +330,49 @@ body{
     background-color: rgb(40, 40, 40);
     color: white;
     height: 90px;
-    justify-content: space-between;
-    position: relative;
     z-index: 1;
 }
 
+/* left */
+
+#footer .f-left{
+    padding-left: 9px;
+}
+
+footer .f-left, .f-center, .f-right{
+    width: calc(100% / 3 - 3px);
+}
+
+footer .f-left .album{
+    height: 40px;
+    width: 40px;
+    margin-right: 9px;
+}
+
+#footer .title{
+    font-size: 13px;
+    margin-right: 9px;
+}
+  
+#footer .f-left .title,
+#footer .f-left .fave{
+    color: rgb(100, 100, 100);
+}
+  
+#footer .title:hover{
+    text-decoration: underline;
+}
+  
+#footer .f-left .title:hover,
+#footer .f-left .fave i:hover{
+    color: white;
+}
+
+/* center */
+
+
+
+/* right */
 
 /* media query */
   
