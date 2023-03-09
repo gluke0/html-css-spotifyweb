@@ -56,13 +56,6 @@ body{
     margin-bottom: 10px;
     padding: 5px 10px;
 }
-  
-/* #sidebar .menu, > *,
-#sidebar .createplay > *,
-#sidebar .list > *,
-#sidebar .account{
-    margin-bottom: ;
-} */
 
 #sidebar .menu .icon{
     margin-bottom: 10px;
@@ -169,7 +162,7 @@ body{
   
 /* media query */
   
-@media screen and (min-width: 553px){
+@media screen and (min-width: 480px){
   #sidebar{
       align-items: flex-start;
       padding-left: 20px;
