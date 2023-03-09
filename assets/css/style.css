@@ -182,9 +182,9 @@ body{
 
 #big{
     background-color: rgb(20, 25, 34);
-    overflow-y: auto;
     padding: 0 30px 0 20px;
     width: calc(100% - 50px);
+    overflow-y: auto;
 }
 
 /* header */
@@ -218,6 +218,10 @@ body{
 
 /* focus */
 
+#focus{
+    overflow-y: auto;
+}
+
 #big #menutwo{
     color: rgb(70, 70, 70);
     margin: 100px 0 50px;
@@ -234,10 +238,78 @@ body{
 
 #big #menutwo ul li:hover a{
     color: white;
-} 
+}
 
-/* recently played */
+#big h2,
+#big h4{
+  color: white;
+}
 
+#big h2{
+  font-size: 30px;
+}
+
+#big h4{
+  font-size: 20px;
+}
+
+#big h5{
+  color: rgb(70, 70, 70);
+}
+
+#big section{
+  text-align: center;
+}
+
+#big section .album{
+  position: relative;
+}
+
+#big section .hover:hover img{
+  background-color: black;
+  opacity: 0.6;
+}
+
+#big section .hover .play{
+  color: white;
+  font-size: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#big section .hover:hover .play{
+  display: block;
+}
+ 
+#big h2,
+#big #foryou h5,
+#big #popular h5{
+  text-align: left;
+}
+
+#big section ul{
+  gap: 12px;
+}
+
+#big section ul li{
+  margin: 30px 0 45px;
+  width: calc(50% - 12px);
+}
+
+#big section ul li .title{
+  margin-top: 20px;
+}
+
+#big section .artist{
+  margin-top: 15px;
+}
+
+#big #popular img{
+  border-radius: 50%;
+}
 
 
 /* media query */
