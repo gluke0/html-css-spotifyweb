@@ -345,7 +345,7 @@ footer .f-left, .f-center, .f-right{
 footer .f-left .album{
     height: 40px;
     width: 40px;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 #footer .title{
@@ -550,9 +550,8 @@ footer .f-left .album{
     }
 
     #footer .barvolume{
-        display: block;
+        display: flex;
     }
-
 }
 
 /* min 710px */
