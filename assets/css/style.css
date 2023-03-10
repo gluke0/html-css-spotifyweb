@@ -443,7 +443,7 @@ footer .f-left .album{
 
 #footer .barvolume .volumemax{
     background-color: rgb(100, 100, 100);
-    width: 50%;
+    width: 100%;
 }
   
 #footer .barvolume{
@@ -459,7 +459,7 @@ footer .f-left .album{
     background-color: white;
     position: relative;
     left: 5px;
-    width: 200px;
+    width: 35%;
 }
   
 #footer .barvolume{
