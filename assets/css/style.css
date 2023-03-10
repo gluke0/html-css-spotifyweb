@@ -372,7 +372,64 @@ footer .f-left .album{
 
 #footer .f-center{
     justify-content: center;
-    align-items: center;
+    width: 40%;
+}
+
+#footer .controls{
+    justify-content: center;
+    column-gap: 2.5%;
+}
+
+#footer .bartouch{
+    height: 5px;
+    width: 90%;
+}
+
+#footer .bartouch .played, #footer .bartouch .remaining{
+  border-radius: 5px;
+}
+
+#footer .bartouch .played{
+  background-color: white;
+  position: relative;
+  left: 5px;
+  width: 20%;
+}
+
+#footer .bartouch .remaining{
+  background-color: rgb(100, 100, 100);
+  width: 100%;
+}
+
+#footer .bartouch{
+  position: relative;
+}
+
+#footer .bartouch:hover{
+  cursor: pointer;
+}
+
+#footer .bartouch:hover .played{
+  background-color: rgb(173, 255, 47);
+}
+
+#footer .bartouch .dot{
+  display: none;
+  left: 16%;
+  position: absolute;
+  top: -6px;
+}
+
+#footer .bartouch:hover .dot{
+  display: block;
+}
+
+#footer .f-center .bar .fa-circle:active{
+    transform: scale(1.2);
+}
+  
+#footer .f-center .bar .timer{
+    margin-left: 5px;
 }
 
 /* right */
@@ -419,7 +476,7 @@ footer .f-left .album{
       left: -20px;
       position: absolute;
     }
-  
+
     #sidebar .account .flex{
       justify-content: flex-start;
     }
