@@ -386,7 +386,7 @@ footer .f-left .album{
 
 #footer .bartouch{
     height: 5px;
-    width: 90%;
+    width: 100%;
 }
 
 #footer .bartouch .played, .remaining{
@@ -459,7 +459,7 @@ footer .f-left .album{
     background-color: white;
     position: relative;
     left: 5px;
-    width: 30%;
+    width: 200px;
 }
   
 #footer .barvolume{
@@ -487,6 +487,10 @@ footer .f-left .album{
   
 #footer .barvolume:hover .volumeset{
     background-color: rgb(173, 255, 47);
+}
+
+#footer .barvolume{
+    display: none;
 }
 
 /* media query */
@@ -545,6 +549,10 @@ footer .f-left .album{
         left: 230px;
     }
 
+    #footer .barvolume{
+        display: block;
+    }
+
 }
 
 /* min 710px */
@@ -568,6 +576,15 @@ footer .f-left .album{
 
     #footer .fave{
         display: flex;
+        margin-left: 20px;
+    }
+
+    #footer .song, .controls, .volume{
+        font-size: 1.2rem;
+    }
+
+    #footer .song a{
+        font-size: 0.7rem;
     }
 }
 
