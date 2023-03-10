@@ -191,7 +191,6 @@ body{
     align-items: center;
     background-color: rgb(8, 11, 18);
     height: 90px;
-    width: 100%;
     justify-content: flex-end;
     position: fixed;
     left: 50px;
@@ -206,7 +205,7 @@ body{
     border: 2px solid white;
     border-radius: 25px;
     color: white;
-    margin-right: 70px;
+    margin-right: 20px;
     padding: 15px 30px;
   }
 
@@ -385,8 +384,13 @@ footer .f-left .album{
     width: 90%;
 }
 
-#footer .bartouch .played, #footer .bartouch .remaining{
+#footer .bartouch .played, .remaining{
   border-radius: 5px;
+}
+
+#footer .bartouch .remaining{
+  background-color: rgb(100, 100, 100);
+  width: 100%;
 }
 
 #footer .bartouch .played{
@@ -396,17 +400,16 @@ footer .f-left .album{
   width: 20%;
 }
 
-#footer .bartouch .remaining{
-  background-color: rgb(100, 100, 100);
-  width: 100%;
-}
-
 #footer .bartouch{
   position: relative;
 }
 
-#footer .bartouch:hover{
+#footer .bartouch:active{
   cursor: pointer;
+}
+
+#footer .f-center .bar .fa-circle:active{
+    transform: scale(1.2);
 }
 
 #footer .bartouch:hover .played{
@@ -417,15 +420,11 @@ footer .f-left .album{
   display: none;
   left: 16%;
   position: absolute;
-  top: -6px;
+  top: -7px;
 }
 
 #footer .bartouch:hover .dot{
   display: block;
-}
-
-#footer .f-center .bar .fa-circle:active{
-    transform: scale(1.2);
 }
   
 #footer .f-center .bar .timer{
@@ -437,6 +436,29 @@ footer .f-left .album{
 #footer .f-right{
     justify-content: flex-end;
 }
+
+#footer .volumebar{
+    height: 5px;
+    width: 45%;
+    margin-left: 5px;
+}
+
+#footer .volumebar .volumemax, .volumeset{
+  border-radius: 5px;
+}
+
+#footer .volumebar .volumemax{
+  background-color: rgb(100, 100, 100);
+  width: 60%;
+}
+ 
+#footer .volumebar .volumeset{
+  background-color: white;
+  position: relative;
+  left: -90px;
+  width: 25%;
+}
+
 
 /* media query */
   
@@ -494,9 +516,6 @@ footer .f-left .album{
         left: 230px;
     }
 
-    #big button{
-        margin-right: 250px;
-    }
 }
 
 /* min 700px */
