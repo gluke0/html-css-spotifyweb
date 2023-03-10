@@ -439,7 +439,7 @@ footer .f-left .album{
 }
  
 #footer .volume span{
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 #footer .barvolume .volumemax{
@@ -449,7 +449,7 @@ footer .f-left .album{
   
 #footer .barvolume{
       height: 5px;
-      width: 50%;
+      width: 35%;
 }
   
 #footer .barvolume .volumeset, .volumemax{
@@ -478,6 +478,17 @@ footer .f-left .album{
     display: block;
 }
 
+#footer .barvolume:active{
+    cursor: pointer;
+}
+ 
+#footer .f-right .barvolume .fa-circle:active{
+      transform: scale(1.2);
+}
+  
+#footer .barvolume:hover .volumeset{
+    background-color: rgb(173, 255, 47);
+}
 
 /* media query */
   
