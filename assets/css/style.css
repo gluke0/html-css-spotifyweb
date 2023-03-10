@@ -371,12 +371,18 @@ footer .f-left .album{
 
 #footer .f-center{
     justify-content: center;
-    width: 40%;
+    flex-grow: 2;
+    padding: 0 5px;
 }
 
 #footer .controls{
     justify-content: center;
     column-gap: 2.5%;
+}
+
+#footer .bartouch .remaining{
+  background-color: rgb(100, 100, 100);
+  width: 100%;
 }
 
 #footer .bartouch{
@@ -386,11 +392,6 @@ footer .f-left .album{
 
 #footer .bartouch .played, .remaining{
   border-radius: 5px;
-}
-
-#footer .bartouch .remaining{
-  background-color: rgb(100, 100, 100);
-  width: 100%;
 }
 
 #footer .bartouch .played{
@@ -436,27 +437,45 @@ footer .f-left .album{
 #footer .f-right{
     justify-content: flex-end;
 }
-
-#footer .volumebar{
-    height: 5px;
-    width: 45%;
-    margin-left: 5px;
-}
-
-#footer .volumebar .volumemax, .volumeset{
-  border-radius: 5px;
-}
-
-#footer .volumebar .volumemax{
-  background-color: rgb(100, 100, 100);
-  width: 60%;
-}
  
-#footer .volumebar .volumeset{
-  background-color: white;
-  position: relative;
-  left: -90px;
-  width: 25%;
+#footer .volume span{
+    margin-left: 8px;
+}
+
+#footer .barvolume .volumemax{
+    background-color: rgb(100, 100, 100);
+    width: 50%;
+}
+  
+#footer .barvolume{
+      height: 5px;
+      width: 50%;
+}
+  
+#footer .barvolume .volumeset, .volumemax{
+    border-radius: 5px;
+}
+  
+#footer .barvolume .volumeset{
+    background-color: white;
+    position: relative;
+    left: 5px;
+    width: 30%;
+}
+  
+#footer .barvolume{
+    position: relative;
+}
+
+#footer .barvolume .dotvol{
+    display: none;
+    left: 25%;
+    position: absolute;
+    top: -7px;
+}
+  
+#footer .barvolume:hover .dotvol{
+    display: block;
 }
 
 
